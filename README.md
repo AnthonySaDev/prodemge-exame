@@ -1,48 +1,10 @@
 # Exame de recrutamento (React Native)
 [![Static Badge](https://img.shields.io/badge/Prodemge-Recrutamento?color=red)](https://www.prodemge.gov.br/)
 
-## Tempo Máximo de Exame ⏲️
 
-Prazo de 60 minutos para comitar a solução dos testes.
+# Solução do Exame da PRODEMGE
 
-## Sobre o exame ℹ️
-
-Nesse desafio, você receberá um aplicativo com alguns erros em seus componentes, a sua tarefa consiste em corrigi-los.
-
-Não existe pontuação, o exame é utilizado somente para medir seu conhecimento, portanto é **recomendado** que consultas externas não sejam feitas, garantindo assim uma maior transparência acerca de seu conhecimento.
-
-## Configuração local para exame prático 💻
-
-<details>
-  <summary>Pré-requisitos</summary>
-
-- Conta no Github - Acesse o [link](https://github.com/) para entrar em sua conta ou se cadastrar.
-
-- Git instalado - Acesse o [link](https://git-scm.com/downloads) para realizar o download do executável conforme seu sistema operacional. Não é necessário mudar nenhuma configuração na instalação, apenas seguir os passos (next) até a finalização da instalação.
-
-- Node.js instalado - Acesse o [link](https://nodejs.org/pt-br/download) para realizar o download.
-
-</details>
-
-<details>
-  <summary>Clonando e rodando os testes 🔴 IMPORTANTE 🔴</summary>
-
-1. **Clonar o repositório:** Para iniciar o exame você deve clonar este repositório ```git clone https://github.com/prodemge-mg/exame-recrutamento-rn.git```
-2. **Instalar as dependências:** Dentro da raiz do projeto, você irá rodar o seguinte comando: ```npm install```
-3. **Rodando os testes:**  Dentro da raiz do projeto, você irá rodar o seguinte comando: ```npm run test```
-
-No seu console deve aparecer ás seguintes informações:
-
-![1705952067499](image/README/1705952067499.png)
-
-</details>
-
-
-
-
-## Exame 📝
-
-Existem três componentes na aplicação: ```Contador, MeuTime e Listagem```. Os três componentes possuem erros de lógica. Em cada teste, tem uma breve descrição no que sua aplicação deve cumprir para que o teste passe
+Foi solicitada a alteração da lógica dos componentes MeuTime, Listagem e Contador.
 
 -	Contador 
     -	Deve ser possível que a contagem funcione corretamente
@@ -62,10 +24,15 @@ Existem três componentes na aplicação: ```Contador, MeuTime e Listagem```. Os
 **Observação:** Para que os testes funcionem corretamente é necessário que **altere somente os componentes** ```[Contador.tsx, MeuTime.tsx, Listagem.tsx]```, dito isso, faça as alterações que achar necessário dentro dos componentes
 
 
-## Fiz todas as correções, e agora?
+## SOLUÇÃO
 
-Se tudo deu certo, o seu console deve retornar essas informações após rodar o comando npm run test
+* Contador: Erro na lógica da função incremetar, pois a variável não estava atualizando no componente, portanto foi necessária a utilização do UseState do React Native para atualizar o estado.
+
+* Listagem: Erro no UseEffect, que após receber os dados estava voltando o array de strings "lista" para seu estado inicial que é vazio.
+
+* MeuTime: Erro na lógica de alteração de visibilidade e atualização do texto do input para o componente Text.
+## Resultado dos testes após alterações
 
 ![1705952511938](image/README/1705952511938.png)
 
-Ao finalizar suba o código para seu repositório no GitHub e avise ao responsável.
+
